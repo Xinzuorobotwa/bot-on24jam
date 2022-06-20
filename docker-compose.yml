@@ -1,0 +1,15 @@
+versi : " 3.9 " 
+layanan :
+  web :
+    membangun : .
+    port :
+      - " 8000:5000 "
+    volume :
+      - .:/kode
+      - logvolume01:/var/log
+    tautan :
+      - ulangi
+  redi :
+    gambar : redis
+volume :
+  logvolume01 : {}
